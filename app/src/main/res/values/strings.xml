@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MutedExclusiveCheckBoxes</string>
+    <string name="payment_information">Информация об оплате</string>
+    <string name="payment_value">Денег к оплате</string>
+    <string name="withBankCard">С банковской карты</string>
+    <string name="withMobileDeposit">С мобильного телефона</string>
+    <string name="withReadyCash">Наличными по адресу</string>
+    <string name="OK">OK</string>
+</resources>
