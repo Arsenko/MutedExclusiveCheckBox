@@ -49,10 +49,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 StringBuilder sb=new StringBuilder();
-                sb.append(paymentInfo.getText().toString()+" ");
-                sb.append(paymentValue.getText().toString()+"руб ");
-                sb.append("Выбран тип оплаты Банковской картой");
-                Toast viewReadedData = new Toast(getApplicationContext(),sb.toString() ,2);
+                String payInfo =paymentInfo.getText().toString();
+                String payValue =paymentValue.getText().toString();
+                if(!payInfo.equals("") && !payValue.equals("")) {
+                    sb.append(payInfo + " ");
+                    sb.append(payValue + "руб ");
+                }else{
+                    sb.append("Не введены все необходимые знания ");
+                }
+                if(BankCard.isChecked()){
+                    sb.append("Выбран тип оплаты Банковской картой");
+                }else if(MobileDeposite.isChecked()){
+                    sb.append("Выбран тип оплаты Мобильным устройством");
+                }else if(ReadyCash.isChecked()){
+                    sb.append("Выбран тип оплаты Наличными");
+                }else{
+                    sb.append("Не выбран тип оплаты");
+                }
+                Toast viewReadedData = Toast.makeText(getApplicationContext(),sb.toString() , Toast.LENGTH_LONG);
                 viewReadedData.show();
             }
         });
