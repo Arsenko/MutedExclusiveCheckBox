@@ -5,5 +5,5 @@
     <string name="withBankCard">С банковской карты</string>
     <string name="withMobileDeposit">С мобильного телефона</string>
     <string name="withReadyCash">Наличными по адресу</string>
-    <string name="OK">OK</string>
+    <string name="ok">OK</string>
 </resources>

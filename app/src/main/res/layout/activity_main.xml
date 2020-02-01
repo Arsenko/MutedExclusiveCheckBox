@@ -36,21 +36,21 @@
         android:inputType="numberDecimal" />
 
     <CheckBox
-        android:id="@+id/BankCardBox"
+        android:id="@+id/bankCardBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:text="@string/withBankCard" />
 
     <CheckBox
-        android:id="@+id/MobileDepositeBox"
+        android:id="@+id/mobileDepositeBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:text="@string/withMobileDeposit" />
 
     <CheckBox
-        android:id="@+id/ReadyCashBox"
+        android:id="@+id/readyCashBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
@@ -60,6 +60,6 @@
         android:id="@+id/saveBut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/OK"
+        android:text="@string/ok"
         android:layout_marginBottom="15dp" />
 </LinearLayout>
